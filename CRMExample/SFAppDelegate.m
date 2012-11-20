@@ -7,12 +7,15 @@
 //
 
 #import "SFAppDelegate.h"
+#import <RestKit/RestKit.h>
+#import "Client.h"
+#import "Action.h"
 
 @implementation SFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+
     return YES;
 }
 							
@@ -41,6 +44,19 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+/*
+  Methods of delegate to inform controller about loading
+ */
+
+- (void)objectLoader:(RKObjectLoader *)objectLoader didLoadObjects:(NSArray *)objects{
+    
+}
+
+- (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error{
+    
 }
 
 @end

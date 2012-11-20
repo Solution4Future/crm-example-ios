@@ -6,13 +6,9 @@
 //  Copyright (c) 2012 Kamil Gałuszka. All rights reserved.
 //
 
-#import "SFSecondViewController.h"
+#import "SFAboutViewController.h"
 
-@interface SFSecondViewController ()
-
-@end
-
-@implementation SFSecondViewController
+@implementation SFAboutViewController
 
 - (void)viewDidLoad
 {

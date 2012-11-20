@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB1DE2AF1647700C00F56BBE /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1DE2A316476FA500F56BBE /* libRestKit.a */; };
+		BB1DE2B11647703100F56BBE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1DE2B01647703100F56BBE /* CoreData.framework */; };
+		BB1DE2B31647703800F56BBE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1DE2B21647703800F56BBE /* CFNetwork.framework */; };
+		BB1DE2B51647704800F56BBE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1DE2B41647704800F56BBE /* MobileCoreServices.framework */; };
+		BB1DE2B71647705400F56BBE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1DE2B61647705400F56BBE /* Security.framework */; };
+		BB1DE2B91647705E00F56BBE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1DE2B81647705E00F56BBE /* SystemConfiguration.framework */; };
+		BB1DE2BB1647706600F56BBE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1DE2BA1647706600F56BBE /* QuartzCore.framework */; };
+		BB1DE2BD1647707800F56BBE /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1DE2BC1647707800F56BBE /* libxml2.dylib */; };
+		BB1DE2D716479D3900F56BBE /* SFActionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1DE2D616479D3900F56BBE /* SFActionsViewController.m */; };
 		BB90CF441645882B00A10098 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB90CF431645882B00A10098 /* UIKit.framework */; };
 		BB90CF461645882B00A10098 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB90CF451645882B00A10098 /* Foundation.framework */; };
 		BB90CF481645882B00A10098 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB90CF471645882B00A10098 /* CoreGraphics.framework */; };
@@ -17,15 +26,71 @@
 		BB90CF581645882B00A10098 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB90CF571645882B00A10098 /* Default@2x.png */; };
 		BB90CF5A1645882B00A10098 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB90CF591645882B00A10098 /* Default-568h@2x.png */; };
 		BB90CF5D1645882B00A10098 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB90CF5B1645882B00A10098 /* MainStoryboard.storyboard */; };
-		BB90CF601645882B00A10098 /* SFFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB90CF5F1645882B00A10098 /* SFFirstViewController.m */; };
+		BB90CF601645882B00A10098 /* SFClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB90CF5F1645882B00A10098 /* SFClientViewController.m */; };
 		BB90CF621645882C00A10098 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = BB90CF611645882C00A10098 /* first.png */; };
 		BB90CF641645882C00A10098 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB90CF631645882C00A10098 /* first@2x.png */; };
-		BB90CF671645882C00A10098 /* SFSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB90CF661645882C00A10098 /* SFSecondViewController.m */; };
+		BB90CF671645882C00A10098 /* SFAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB90CF661645882C00A10098 /* SFAboutViewController.m */; };
 		BB90CF691645882C00A10098 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BB90CF681645882C00A10098 /* second.png */; };
 		BB90CF6B1645882C00A10098 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB90CF6A1645882C00A10098 /* second@2x.png */; };
+		BB9E10C9165C30A4008EB8C6 /* SFRestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9E10C8165C30A3008EB8C6 /* SFRestAPI.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BB1DE2A216476FA500F56BBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB1DE29716476FA400F56BBE /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		BB1DE2A416476FA500F56BBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB1DE29716476FA400F56BBE /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		BB1DE2A616476FA500F56BBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB1DE29716476FA400F56BBE /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		BB1DE2A816476FA500F56BBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB1DE29716476FA400F56BBE /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		BB1DE2AA16476FA500F56BBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB1DE29716476FA400F56BBE /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 259C301615128079003066A2;
+			remoteInfo = RestKitResources;
+		};
+		BB1DE2AD16476FF700F56BBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB1DE29716476FA400F56BBE /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		BB1DE29716476FA400F56BBE /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		BB1DE2B01647703100F56BBE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BB1DE2B21647703800F56BBE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BB1DE2B41647704800F56BBE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BB1DE2B61647705400F56BBE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BB1DE2B81647705E00F56BBE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BB1DE2BA1647706600F56BBE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BB1DE2BC1647707800F56BBE /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		BB1DE2D516479D3900F56BBE /* SFActionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFActionsViewController.h; sourceTree = "<group>"; };
+		BB1DE2D616479D3900F56BBE /* SFActionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFActionsViewController.m; sourceTree = "<group>"; };
 		BB90CF3F1645882B00A10098 /* CRMExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRMExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB90CF431645882B00A10098 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BB90CF451645882B00A10098 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -40,14 +105,16 @@
 		BB90CF571645882B00A10098 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		BB90CF591645882B00A10098 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BB90CF5C1645882B00A10098 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		BB90CF5E1645882B00A10098 /* SFFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFFirstViewController.h; sourceTree = "<group>"; };
-		BB90CF5F1645882B00A10098 /* SFFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFFirstViewController.m; sourceTree = "<group>"; };
+		BB90CF5E1645882B00A10098 /* SFClientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFClientViewController.h; sourceTree = "<group>"; };
+		BB90CF5F1645882B00A10098 /* SFClientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFClientViewController.m; sourceTree = "<group>"; };
 		BB90CF611645882C00A10098 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		BB90CF631645882C00A10098 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		BB90CF651645882C00A10098 /* SFSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFSecondViewController.h; sourceTree = "<group>"; };
-		BB90CF661645882C00A10098 /* SFSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFSecondViewController.m; sourceTree = "<group>"; };
+		BB90CF651645882C00A10098 /* SFAboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAboutViewController.h; sourceTree = "<group>"; };
+		BB90CF661645882C00A10098 /* SFAboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFAboutViewController.m; sourceTree = "<group>"; };
 		BB90CF681645882C00A10098 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		BB90CF6A1645882C00A10098 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		BB9E10C7165C30A3008EB8C6 /* SFRestAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFRestAPI.h; sourceTree = "<group>"; };
+		BB9E10C8165C30A3008EB8C6 /* SFRestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFRestAPI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +122,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1DE2BD1647707800F56BBE /* libxml2.dylib in Frameworks */,
+				BB1DE2BB1647706600F56BBE /* QuartzCore.framework in Frameworks */,
+				BB1DE2B91647705E00F56BBE /* SystemConfiguration.framework in Frameworks */,
+				BB1DE2B71647705400F56BBE /* Security.framework in Frameworks */,
+				BB1DE2B51647704800F56BBE /* MobileCoreServices.framework in Frameworks */,
+				BB1DE2B31647703800F56BBE /* CFNetwork.framework in Frameworks */,
+				BB1DE2B11647703100F56BBE /* CoreData.framework in Frameworks */,
+				BB1DE2AF1647700C00F56BBE /* libRestKit.a in Frameworks */,
 				BB90CF441645882B00A10098 /* UIKit.framework in Frameworks */,
 				BB90CF461645882B00A10098 /* Foundation.framework in Frameworks */,
 				BB90CF481645882B00A10098 /* CoreGraphics.framework in Frameworks */,
@@ -64,9 +139,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB1DE29816476FA400F56BBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB1DE2A316476FA500F56BBE /* libRestKit.a */,
+				BB1DE2A516476FA500F56BBE /* RestKitTests.octest */,
+				BB1DE2A716476FA500F56BBE /* RestKit.framework */,
+				BB1DE2A916476FA500F56BBE /* RestKitFrameworkTests.octest */,
+				BB1DE2AB16476FA500F56BBE /* RestKitResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB1DE2C71647789200F56BBE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		BB90CF341645882B00A10098 = {
 			isa = PBXGroup;
 			children = (
+				BB1DE29716476FA400F56BBE /* RestKit.xcodeproj */,
 				BB90CF491645882B00A10098 /* CRMExample */,
 				BB90CF421645882B00A10098 /* Frameworks */,
 				BB90CF401645882B00A10098 /* Products */,
@@ -84,6 +180,13 @@
 		BB90CF421645882B00A10098 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BB1DE2BC1647707800F56BBE /* libxml2.dylib */,
+				BB1DE2BA1647706600F56BBE /* QuartzCore.framework */,
+				BB1DE2B81647705E00F56BBE /* SystemConfiguration.framework */,
+				BB1DE2B61647705400F56BBE /* Security.framework */,
+				BB1DE2B41647704800F56BBE /* MobileCoreServices.framework */,
+				BB1DE2B21647703800F56BBE /* CFNetwork.framework */,
+				BB1DE2B01647703100F56BBE /* CoreData.framework */,
 				BB90CF431645882B00A10098 /* UIKit.framework */,
 				BB90CF451645882B00A10098 /* Foundation.framework */,
 				BB90CF471645882B00A10098 /* CoreGraphics.framework */,
@@ -94,17 +197,22 @@
 		BB90CF491645882B00A10098 /* CRMExample */ = {
 			isa = PBXGroup;
 			children = (
+				BB1DE2C71647789200F56BBE /* Models */,
+				BB9E10C7165C30A3008EB8C6 /* SFRestAPI.h */,
+				BB9E10C8165C30A3008EB8C6 /* SFRestAPI.m */,
 				BB90CF521645882B00A10098 /* SFAppDelegate.h */,
 				BB90CF531645882B00A10098 /* SFAppDelegate.m */,
 				BB90CF5B1645882B00A10098 /* MainStoryboard.storyboard */,
-				BB90CF5E1645882B00A10098 /* SFFirstViewController.h */,
-				BB90CF5F1645882B00A10098 /* SFFirstViewController.m */,
+				BB90CF5E1645882B00A10098 /* SFClientViewController.h */,
+				BB90CF5F1645882B00A10098 /* SFClientViewController.m */,
 				BB90CF611645882C00A10098 /* first.png */,
 				BB90CF631645882C00A10098 /* first@2x.png */,
-				BB90CF651645882C00A10098 /* SFSecondViewController.h */,
-				BB90CF661645882C00A10098 /* SFSecondViewController.m */,
+				BB90CF651645882C00A10098 /* SFAboutViewController.h */,
+				BB90CF661645882C00A10098 /* SFAboutViewController.m */,
 				BB90CF681645882C00A10098 /* second.png */,
 				BB90CF6A1645882C00A10098 /* second@2x.png */,
+				BB1DE2D516479D3900F56BBE /* SFActionsViewController.h */,
+				BB1DE2D616479D3900F56BBE /* SFActionsViewController.m */,
 				BB90CF4A1645882B00A10098 /* Supporting Files */,
 			);
 			path = CRMExample;
@@ -138,6 +246,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BB1DE2AE16476FF700F56BBE /* PBXTargetDependency */,
 			);
 			name = CRMExample;
 			productName = CRMExample;
@@ -164,12 +273,56 @@
 			mainGroup = BB90CF341645882B00A10098;
 			productRefGroup = BB90CF401645882B00A10098 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BB1DE29816476FA400F56BBE /* Products */;
+					ProjectRef = BB1DE29716476FA400F56BBE /* RestKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				BB90CF3E1645882B00A10098 /* CRMExample */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BB1DE2A316476FA500F56BBE /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = BB1DE2A216476FA500F56BBE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BB1DE2A516476FA500F56BBE /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = BB1DE2A416476FA500F56BBE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BB1DE2A716476FA500F56BBE /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = BB1DE2A616476FA500F56BBE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BB1DE2A916476FA500F56BBE /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = BB1DE2A816476FA500F56BBE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BB1DE2AB16476FA500F56BBE /* RestKitResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitResources.bundle;
+			remoteRef = BB1DE2AA16476FA500F56BBE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BB90CF3D1645882B00A10098 /* Resources */ = {
@@ -197,12 +350,22 @@
 			files = (
 				BB90CF501645882B00A10098 /* main.m in Sources */,
 				BB90CF541645882B00A10098 /* SFAppDelegate.m in Sources */,
-				BB90CF601645882B00A10098 /* SFFirstViewController.m in Sources */,
-				BB90CF671645882C00A10098 /* SFSecondViewController.m in Sources */,
+				BB90CF601645882B00A10098 /* SFClientViewController.m in Sources */,
+				BB90CF671645882C00A10098 /* SFAboutViewController.m in Sources */,
+				BB1DE2D716479D3900F56BBE /* SFActionsViewController.m in Sources */,
+				BB9E10C9165C30A4008EB8C6 /* SFRestAPI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB1DE2AE16476FF700F56BBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = BB1DE2AD16476FF700F56BBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BB90CF4C1645882B00A10098 /* InfoPlist.strings */ = {
@@ -279,7 +442,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CRMExample/CRMExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "CRMExample/CRMExample-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -290,7 +458,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CRMExample/CRMExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "CRMExample/CRMExample-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -315,6 +488,7 @@
 				BB90CF701645882C00A10098 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

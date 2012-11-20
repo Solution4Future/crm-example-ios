@@ -1,5 +1,5 @@
 //
-//  SFFirstViewController.h
+//  SFSecondViewController.h
 //  CRMExample
 //
 //  Created by Kamil Gałuszka on 11/3/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SFFirstViewController : UIViewController
+@interface SFAboutViewController : UIViewController
 
 @end
