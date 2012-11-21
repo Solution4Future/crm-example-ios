@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SFLoadingRestObjects.h"
 
-@interface SFClientViewController : UITableViewController
+@interface SFClientViewController : UITableViewController <SFLoadingRestObjects>
 {
     UIAlertView *alertView;
+    NSArray *clients;
 }
 @property (nonatomic,strong) UIAlertView *alertView;
-- (void) clientDidLoad;
-- (void) clientWillLoad;
+@property (nonatomic,strong) NSArray *clients;
 
 @end

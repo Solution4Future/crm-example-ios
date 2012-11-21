@@ -7,11 +7,14 @@
 //
 
 #import "SFClientViewController.h"
-
+#import "SFAppDelegate.h"
+#import "SFActionsViewController.h"
+#import "Client.h"
+#import "SFRestAPI.h"
 
 
 @implementation SFClientViewController
-@synthesize alertView;
+@synthesize alertView, clients;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -24,7 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    SFAppDelegate *delegate = (SFAppDelegate *)[UIApplication sharedApplication].delegate;
+    [[delegate api] startSynchronization:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -33,10 +37,48 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    // Return the number of rows in the section.
+    NSError *error;
+    return [Client count:&error];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"ClientCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    [cell.textLabel setText:[[self.clients objectAtIndex:[indexPath row]] name]];
+    
+    return cell;
+}
+
+#pragma mark - Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    SFActionsViewController *controller = (SFActionsViewController *)segue.destinationViewController;
+    UITableViewCell* cell = (UITableViewCell *)sender;
+    [controller setClient:[self.clients objectAtIndex:[[self.tableView indexPathForCell:cell] row]]];
+
+}
 - (void) clientDidLoad{
-    self.alertView = [[UIAlertView alloc] initWithTitle:@"Downloading Clients" message:nil delegate:self cancelButtonTitle:nil otherButtonTitles:nil];
+    [self.alertView dismissWithClickedButtonIndex:0 animated:YES];
+    self.clients = [Client findAll];
+    [self.tableView reloadData];
+
 }
 - (void) clientWillLoad{
-    [self.alertView dismissWithClickedButtonIndex:0 animated:YES];
+    self.alertView = [[UIAlertView alloc] initWithTitle:@"Downloading Clients" message:nil delegate:self cancelButtonTitle:nil otherButtonTitles:nil];
+    [self.alertView show];
 }
 @end

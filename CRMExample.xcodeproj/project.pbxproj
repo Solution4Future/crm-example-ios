@@ -33,6 +33,9 @@
 		BB90CF691645882C00A10098 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BB90CF681645882C00A10098 /* second.png */; };
 		BB90CF6B1645882C00A10098 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB90CF6A1645882C00A10098 /* second@2x.png */; };
 		BB9E10C9165C30A4008EB8C6 /* SFRestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9E10C8165C30A3008EB8C6 /* SFRestAPI.m */; };
+		BB9E10CC165C4CF8008EB8C6 /* CRMModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB9E10CA165C4CF8008EB8C6 /* CRMModel.xcdatamodeld */; };
+		BB9E10CF165C4D78008EB8C6 /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9E10CE165C4D78008EB8C6 /* Client.m */; };
+		BB9E10D2165C4D79008EB8C6 /* Action.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9E10D1165C4D79008EB8C6 /* Action.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +118,13 @@
 		BB90CF6A1645882C00A10098 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		BB9E10C7165C30A3008EB8C6 /* SFRestAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFRestAPI.h; sourceTree = "<group>"; };
 		BB9E10C8165C30A3008EB8C6 /* SFRestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFRestAPI.m; sourceTree = "<group>"; };
+		BB9E10CB165C4CF8008EB8C6 /* CRMModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CRMModel.xcdatamodel; sourceTree = "<group>"; };
+		BB9E10CD165C4D78008EB8C6 /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Client.h; path = CRMExample/Client.h; sourceTree = "<group>"; };
+		BB9E10CE165C4D78008EB8C6 /* Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Client.m; path = CRMExample/Client.m; sourceTree = "<group>"; };
+		BB9E10D0165C4D79008EB8C6 /* Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Action.h; path = CRMExample/Action.h; sourceTree = "<group>"; };
+		BB9E10D1165C4D79008EB8C6 /* Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Action.m; path = CRMExample/Action.m; sourceTree = "<group>"; };
+		BB9E10D3165C68FB008EB8C6 /* SFLoadingRestObjects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFLoadingRestObjects.h; sourceTree = "<group>"; };
+		BB9E10D4165C853D008EB8C6 /* CRMModel 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CRMModel 2.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +164,10 @@
 		BB1DE2C71647789200F56BBE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BB9E10D0165C4D79008EB8C6 /* Action.h */,
+				BB9E10D1165C4D79008EB8C6 /* Action.m */,
+				BB9E10CD165C4D78008EB8C6 /* Client.h */,
+				BB9E10CE165C4D78008EB8C6 /* Client.m */,
 			);
 			name = Models;
 			path = ..;
@@ -198,10 +212,12 @@
 			isa = PBXGroup;
 			children = (
 				BB1DE2C71647789200F56BBE /* Models */,
+				BB9E10D3165C68FB008EB8C6 /* SFLoadingRestObjects.h */,
 				BB9E10C7165C30A3008EB8C6 /* SFRestAPI.h */,
 				BB9E10C8165C30A3008EB8C6 /* SFRestAPI.m */,
 				BB90CF521645882B00A10098 /* SFAppDelegate.h */,
 				BB90CF531645882B00A10098 /* SFAppDelegate.m */,
+				BB9E10CA165C4CF8008EB8C6 /* CRMModel.xcdatamodeld */,
 				BB90CF5B1645882B00A10098 /* MainStoryboard.storyboard */,
 				BB90CF5E1645882B00A10098 /* SFClientViewController.h */,
 				BB90CF5F1645882B00A10098 /* SFClientViewController.m */,
@@ -354,6 +370,9 @@
 				BB90CF671645882C00A10098 /* SFAboutViewController.m in Sources */,
 				BB1DE2D716479D3900F56BBE /* SFActionsViewController.m in Sources */,
 				BB9E10C9165C30A4008EB8C6 /* SFRestAPI.m in Sources */,
+				BB9E10CC165C4CF8008EB8C6 /* CRMModel.xcdatamodeld in Sources */,
+				BB9E10CF165C4D78008EB8C6 /* Client.m in Sources */,
+				BB9E10D2165C4D79008EB8C6 /* Action.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +510,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BB9E10CA165C4CF8008EB8C6 /* CRMModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BB9E10D4165C853D008EB8C6 /* CRMModel 2.xcdatamodel */,
+				BB9E10CB165C4CF8008EB8C6 /* CRMModel.xcdatamodel */,
+			);
+			currentVersion = BB9E10D4165C853D008EB8C6 /* CRMModel 2.xcdatamodel */;
+			path = CRMModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BB90CF361645882B00A10098 /* Project object */;
 }

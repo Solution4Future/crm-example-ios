@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import <RestKit/RestKit.h>
+@class SFRestAPI;
 
-
-@interface SFAppDelegate : UIResponder <UIApplicationDelegate, RKObjectLoaderDelegate>
-
+@interface SFAppDelegate : UIResponder <UIApplicationDelegate>
+{
+    SFRestAPI *api;
+}
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) SFRestAPI *api;
+- (NSString *)applicationDocumentsDirectory;
 
 @end

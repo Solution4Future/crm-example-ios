@@ -7,15 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SFLoadingRestObjects.h"
 
 @class Client;
 
-@interface SFActionsViewController : UITableViewController
+@interface SFActionsViewController : UITableViewController <SFLoadingRestObjects, UITextFieldDelegate>
 {
     Client *client;
+    NSArray *actions;
+    UIAlertView *alertView;
+
 }
 @property (nonatomic,strong) Client *client;
+@property (nonatomic,strong) NSArray *actions;
+@property (nonatomic,strong) UIAlertView *alertView;
 @property (nonatomic,strong) IBOutlet UITextField *phone;
 @property (nonatomic,strong) IBOutlet UITextField *address;
 @property (nonatomic,strong) IBOutlet UITextField *name;
+
+- (IBAction)updateClient:(id)sender;
 @end
